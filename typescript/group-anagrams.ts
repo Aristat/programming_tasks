@@ -9,7 +9,7 @@ function groupAnagrams(strs: string[]): string[][] {
 
         const uniqStr: string = arr.join(',')
         map[uniqStr] ||= []
-        map[uniqStr]!.push(str)
+        map[uniqStr].push(str)
     }
 
     return Object.values(map)
